@@ -1,0 +1,16 @@
+#Givens =  40  Time:  43.8448660374
+#Givens =  39  Time:  45.0169479847
+#Givens =  38  Time:  46.4626410007
+#Givens =  37  Time:  47.9259860516
+#Givens =  36  Time:  49.1581399441
+#Givens =  35  Time:  50.4514920712
+#Givens =  34  Time:  51.6175229549
+#Givens =  33  Time:  53.7609019279
+#Givens =  32  Time:  55.3482282162
+#Givens =  31  Time:  57.2633769512
+#Givens =  30  Time:  59.1306169033
+#Givens =  29  Time:  61.7933971882
+#Givens =  28  Time:  64.2729868889
+#Givens =  27  Time:  68.7456600666
+#Givens =  26  Time:  86.0960688591
+#Givens =  25  Time:  290.915827036

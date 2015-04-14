@@ -1,0 +1,5 @@
+data = read.csv("output/log_data.csv")
+regnw = lm(time~(f1+f2+f3+f4+f5+f6),data=data)
+summary(regnw)
+write.csv(coef(summary( regnw )), file= "output/r_files/log_outputresultReg.csv")
+write.csv(anova(regnw), file= "output/r_files/log_ANOVA.csv")

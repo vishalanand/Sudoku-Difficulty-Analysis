@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     sudoku
+Instances:    640
+Attributes:   7
+              f1
+              f2
+              f3
+              f4
+              f5
+              f6
+              time
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+f1 = -1
+|   f2 = -1: CLASS3 (160.0/73.0)
+|   f2 = 1
+|   |   f4 = -1
+|   |   |   f3 = -1
+|   |   |   |   f6 = -1: CLASS3 (20.0/10.0)
+|   |   |   |   f6 = 1
+|   |   |   |   |   f5 = -1: CLASS8 (10.0)
+|   |   |   |   |   f5 = 1: CLASS3 (10.0/3.0)
+|   |   |   f3 = 1: CLASS3 (40.0/17.0)
+|   |   f4 = 1
+|   |   |   f5 = -1
+|   |   |   |   f6 = -1: CLASS3 (20.0/10.0)
+|   |   |   |   f6 = 1
+|   |   |   |   |   f3 = -1: CLASS4 (10.0/3.0)
+|   |   |   |   |   f3 = 1: CLASS3 (10.0/6.0)
+|   |   |   f5 = 1
+|   |   |   |   f3 = -1: CLASS3 (20.0/8.0)
+|   |   |   |   f3 = 1
+|   |   |   |   |   f6 = -1: CLASS2 (10.0/7.0)
+|   |   |   |   |   f6 = 1: CLASS4 (10.0/3.0)
+f1 = 1
+|   f6 = -1
+|   |   f3 = -1
+|   |   |   f5 = -1
+|   |   |   |   f2 = -1: CLASS3 (20.0/11.0)
+|   |   |   |   f2 = 1: CLASS8 (20.0/9.0)
+|   |   |   f5 = 1: CLASS4 (40.0/25.0)
+|   |   f3 = 1
+|   |   |   f5 = -1: CLASS4 (40.0/22.0)
+|   |   |   f5 = 1
+|   |   |   |   f2 = -1: CLASS8 (20.0)
+|   |   |   |   f2 = 1: CLASS4 (20.0/13.0)
+|   f6 = 1
+|   |   f2 = -1
+|   |   |   f3 = -1
+|   |   |   |   f5 = -1
+|   |   |   |   |   f4 = -1: CLASS8 (10.0)
+|   |   |   |   |   f4 = 1: CLASS4 (10.0/7.0)
+|   |   |   |   f5 = 1: CLASS4 (20.0/11.0)
+|   |   |   f3 = 1
+|   |   |   |   f4 = -1: CLASS4 (20.0/10.0)
+|   |   |   |   f4 = 1: CLASS5 (20.0/9.0)
+|   |   f2 = 1: CLASS5 (80.0/42.0)
+
+Number of Leaves  : 	23
+
+Size of the tree : 	45
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         318               49.6875 %
+Incorrectly Classified Instances       322               50.3125 %
+Kappa statistic                          0.3252
+Mean absolute error                      0.1423
+Root mean squared error                  0.273 
+Relative absolute error                 81.4483 %
+Root relative squared error             92.4637 %
+Coverage of cases (0.95 level)          92.8125 %
+Mean rel. region size (0.95 level)      48.1944 %
+Total Number of Instances              640     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         CLASS1
+                 0.040    0.010    0.143      0.040    0.063      0.056    0.666     0.083     CLASS2
+                 0.790    0.357    0.502      0.790    0.614      0.402    0.755     0.504     CLASS3
+                 0.357    0.193    0.397      0.357    0.376      0.170    0.610     0.362     CLASS4
+                 0.456    0.099    0.470      0.456    0.463      0.362    0.713     0.337     CLASS5
+                 0.000    0.005    0.000      0.000    0.000      -0.018   0.676     0.122     CLASS6
+                 0.000    0.000    0.000      0.000    0.000      0.000    0.650     0.050     CLASS7
+                 0.634    0.022    0.813      0.634    0.712      0.683    0.815     0.705     CLASS8
+                 0.000    0.000    0.000      0.000    0.000      0.000    ?         ?         CLASS9
+Weighted Avg.    0.497    0.181    0.446      0.497    0.459      0.317    0.706     0.410     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   <-- classified as
+   0   0   0   0   0   0   0   0   0 |   a = CLASS1
+   0   1  21   3   0   0   0   0   0 |   b = CLASS2
+   0   2 158  34   2   0   0   4   0 |   c = CLASS3
+   0   1  80  60  20   3   0   4   0 |   d = CLASS4
+   0   1  27  26  47   0   0   2   0 |   e = CLASS5
+   0   1   9  11  19   0   0   2   0 |   f = CLASS6
+   0   0   4   6  10   0   0   0   0 |   g = CLASS7
+   0   1  16  11   2   0   0  52   0 |   h = CLASS8
+   0   0   0   0   0   0   0   0   0 |   i = CLASS9
+
